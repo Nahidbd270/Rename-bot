@@ -15,7 +15,7 @@ class Config(object):
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://i.ibb.co/jkQyGgJp/photo-2025-04-17-13-51-59-7494279505553391624.jpg")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '7409347279').split()]
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '8090888302').split()]
 
     # channels logs
     FORCE_SUB   = os.environ.get("FORCE_SUB", "TGLinkBase") 

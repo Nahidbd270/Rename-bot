@@ -4,9 +4,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "26195153")
-    API_HASH  = os.environ.get("API_HASH", "cffc45876502fd70a6d20141b3bd1c8f")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8074467709:AAF6xl56VE4vybf8XNW-LlitVFtsre4FeAU") 
+    API_ID    = os.environ.get("API_ID", "20632324")
+    API_HASH  = os.environ.get("API_HASH", "7472998b241dd149fc2b2167ce045c0e")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8460641147:AAEBhrBeaeJ6HoHoKykhmowkUlnEiO-KQvA") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","rename")     
@@ -18,9 +18,9 @@ class Config(object):
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '7409347279').split()]
 
     # channels logs
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "AllBotUpdatemy") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002597872794"))
-    BIN_CHANNEL = int(os.environ.get("BIN_CHANNEL", "-1002406052868"))
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "TGLinkBase") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002724644600"))
+    BIN_CHANNEL = int(os.environ.get("BIN_CHANNEL", "-1002724644600"))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
